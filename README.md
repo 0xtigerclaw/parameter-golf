@@ -1,6 +1,8 @@
 # Parameter Golf — Experiments by @0xtigerclaw
 
-Personal experimentation branch for the [OpenAI Parameter Golf Challenge](https://github.com/openai/parameter-golf) — training a language model to minimize validation bits-per-byte (val_bpb) within a 16MB package and 10-minute training budget on 8×H100s.
+Personal experimentation branch for the [OpenAI Parameter Golf Challenge](https://github.com/openai/parameter-golf) 
+
+Training a language model to minimize validation bits-per-byte (val_bpb) within a 16MB package and 10-minute training budget on 8×H100s.
 
 **Current best: `1.4680 val_bpb`**
 **Official baseline to beat: `1.2244 val_bpb`**
@@ -9,7 +11,9 @@ Personal experimentation branch for the [OpenAI Parameter Golf Challenge](https:
 
 ## What this challenge is
 
-Train a language model from scratch on the FineWeb dataset (1024-token vocabulary). The model is scored on how well it predicts — and therefore compresses — raw internet text. Lower bits-per-byte = the model is less surprised by the text = it has built a better model of language.
+Train a language model from scratch on the FineWeb dataset (1024-token vocabulary).  
+
+Lower bits-per-byte = the model is less surprised by the text prediction = it has built a better model of language.
 
 Two hard constraints:
 - Submission package must be **< 16MB**
